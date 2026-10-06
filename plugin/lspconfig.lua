@@ -1,7 +1,7 @@
-vim.lsp.enable({ 'emmylua_ls', 'clangd', 'zls', 'rust-analyzer' })
+vim.lsp.enable({ 'emmylua_ls', 'clangd', 'zls', 'rust-analyzer', 'neocmake' })
 
 vim.api.nvim_create_autocmd('BufWritePre', {
-    pattern = { '*.lua', '*.c', '*.zig', '*.rs' },
+    pattern = { '*.lua', '*.c', '*.zig', '*.rs', 'CMakeLists.txt' },
     callback = function ()
         vim.lsp.buf.format()
     end
