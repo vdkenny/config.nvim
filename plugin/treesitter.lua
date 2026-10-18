@@ -1,6 +1,6 @@
 local pkg = require('nvim-treesitter')
 
-local languages = { 'vimdoc', 'bash', 'lua', 'c', 'zig', 'rust', 'cmake' }
+local languages = { 'vimdoc', 'bash', 'lua', 'c', 'zig', 'rust', 'cmake', 'meson' }
 pkg.install(languages)
 
 vim.api.nvim_create_autocmd('FileType', {
